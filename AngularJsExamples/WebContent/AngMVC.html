@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>  
+
+</head>
+<body ng-app="Myapp" ng-controller="MyController">
+<p>First Name :<input style="background-color: lime;" type="text" ng-model="fname">
+<p>Last Name  :<input style="background-color: lime;" type="text" ng-model="lname">
+<p>Welcome to Angularjs {{fname +""+lname}}
+
+</body>
+<script>
+var app=angular.module("Myapp",[]);
+app.controller("MyController", function($scope) {
+	$scope.fname="Rizana";
+	$scope.lname="Thayale vathukkal";
+});
+</script>
+</html>
